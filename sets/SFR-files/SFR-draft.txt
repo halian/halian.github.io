@@ -1,0 +1,3191 @@
+[CustomCards]
+	[
+		{
+			"name": "Ilâthri Warmage",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Angel Wizard",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/21_Ilâthri Warmage.png"
+			}
+		},
+		{
+			"name": "Archangel of Calm",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/4_Archangel of Calm.png"
+			}
+		},
+		{
+			"name": "Archangel of Peace",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Creature — Angel Cleric",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/5_Archangel of Peace.png"
+			}
+		},
+		{
+			"name": "Ashura of Restoration",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Angel Cleric",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/6_Ashura of Restoration.png"
+			}
+		},
+		{
+			"name": "Aven Mindcensor",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Bird Wizard",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/7_Aven Mindcensor.png"
+			}
+		},
+		{
+			"name": "Aviru, Guardian of Airuthien",
+			"rarity": "rare",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Legendary Creature — Angel",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/9_Aviru, Guardian of Airuthien.png"
+			}
+		},
+		{
+			"name": "Aviru's Inquisitor",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Angel Knight",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/10_Aviru's Inquisitor.png"
+			}
+		},
+		{
+			"name": "Call for Help",
+			"rarity": "common",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Instant",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/12_Call for Help.png"
+			}
+		},
+		{
+			"name": "Crusader of Enâra",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Angel Soldier",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/13_Crusader of Enâra.png"
+			}
+		},
+		{
+			"name": "Domina of Strength",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Angel Knight",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/16_Domina of Strength.png"
+			}
+		},
+		{
+			"name": "Even the Odds",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/17_Even the Odds.png"
+			}
+		},
+		{
+			"name": "Aven Nightwatch",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Bird",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/8_Aven Nightwatch.png"
+			}
+		},
+		{
+			"name": "Defender of Airuthien",
+			"rarity": "rare",
+			"mana_cost": "{6}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/15_Defender of Airuthien.png"
+			}
+		},
+		{
+			"name": "Hypnotic Glare",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/20_Hypnotic Glare.png"
+			}
+		},
+		{
+			"name": "Inquisitor's Hall",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Enchantment",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/22_Inquisitor's Hall.png"
+			}
+		},
+		{
+			"name": "Lucent Liminid",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Enchantment Creature — Elemental",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/24_Lucent Liminid.png"
+			}
+		},
+		{
+			"name": "Mount Aran Honor Guard",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Angel Knight",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/27_Mount Aran Honor Guard.png"
+			}
+		},
+		{
+			"name": "Order of Mount Aran",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Angel Knight",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/28_Order of Mount Aran.png"
+			}
+		},
+		{
+			"name": "Peace of Mind",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/29_Peace of Mind.png"
+			}
+		},
+		{
+			"name": "Shatter the Mundanes",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/35_Shatter the Mundanes.png"
+			}
+		},
+		{
+			"name": "Substitute",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/38_Substitute.png"
+			}
+		},
+		{
+			"name": "Vitalizing Nostalgia",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Instant",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/43_Vitalizing Nostalgia.png"
+			}
+		},
+		{
+			"name": "Worldspine Bachelor",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Creature — Bird Knight",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/46_Worldspine Bachelor.png"
+			}
+		},
+		{
+			"name": "Mental Defenses",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/81_Mental Defenses.png"
+			}
+		},
+		{
+			"name": "Flash of Insight",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Sorcery",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/65_Flash of Insight.png"
+			}
+		},
+		{
+			"name": "Mind-Flight Novice",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Safir Pilot",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/82_Mind-Flight Novice.png"
+			}
+		},
+		{
+			"name": "Aigwêrion Mismar",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Legendary Planeswalker — Mismar",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/47_Aigwêrion Mismar.png"
+			}
+		},
+		{
+			"name": "Astral Reinforcements",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/55_Astral Reinforcements.png"
+			}
+		},
+		{
+			"name": "Counterspell",
+			"rarity": "common",
+			"mana_cost": "{U}{U}",
+			"type": "Instant",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/59_Counterspell.png"
+			}
+		},
+		{
+			"name": "Cryptic Annelid",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Worm Beast",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/60_Cryptic Annelid.png"
+			}
+		},
+		{
+			"name": "Librarian of Kaêna",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Safir Advisor",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/74_Librarian of Kaêna.png"
+			}
+		},
+		{
+			"name": "Foresee",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Sorcery",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/66_Foresee.png"
+			}
+		},
+		{
+			"name": "Librarian of Mishe",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Safir Advisor",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/75_Librarian of Mishe.png"
+			}
+		},
+		{
+			"name": "Nix",
+			"rarity": "rare",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/86_Nix.png"
+			}
+		},
+		{
+			"name": "Novice Mindcensor",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Safir",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/87_Novice Mindcensor.png"
+			}
+		},
+		{
+			"name": "Overwhelming Resonance",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/88_Overwhelming Resonance.png"
+			}
+		},
+		{
+			"name": "Psychic Awakening",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/91_Psychic Awakening.png"
+			}
+		},
+		{
+			"name": "Psychic Surgery",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/92_Psychic Surgery.png"
+			}
+		},
+		{
+			"name": "Rethink",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/96_Rethink.png"
+			}
+		},
+		{
+			"name": "Sleep",
+			"rarity": "common",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/102_Sleep.png"
+			}
+		},
+		{
+			"name": "Spellweaver Volute",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/103_Spellweaver Volute.png"
+			}
+		},
+		{
+			"name": "Split Personality",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/104_Split Personality.png"
+			}
+		},
+		{
+			"name": "Stifle",
+			"rarity": "rare",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/105_Stifle.png"
+			}
+		},
+		{
+			"name": "Telepathy",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Enchantment",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/108_Telepathy.png"
+			}
+		},
+		{
+			"name": "Thoughtful Meditation",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Sorcery",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/111_Thoughtful Meditation.png"
+			}
+		},
+		{
+			"name": "Vision Skeins",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/115_Vision Skeins.png"
+			}
+		},
+		{
+			"name": "Vision of the Mesmer",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Creature — Aenigma",
+			"collector_number": "174",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/174_Vision of the Mesmer.png"
+			}
+		},
+		{
+			"name": "Boneyard Sentinel",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Dragon Skeleton",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/121_Boneyard Sentinel.png"
+			}
+		},
+		{
+			"name": "Cruel Bargain",
+			"rarity": "rare",
+			"mana_cost": "{B}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/123_Cruel Bargain.png"
+			}
+		},
+		{
+			"name": "Delirium Skeins",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/124_Delirium Skeins.png"
+			}
+		},
+		{
+			"name": "Dream Feast",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/125_Dream Feast.png"
+			}
+		},
+		{
+			"name": "Feast on Memories",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/134_Feast on Memories.png"
+			}
+		},
+		{
+			"name": "Forget",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Sorcery",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/137_Forget.png"
+			}
+		},
+		{
+			"name": "Hunger for Blood",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/141_Hunger for Blood.png"
+			}
+		},
+		{
+			"name": "Ikchal, Enforcer Prefect",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Legendary Planeswalker — Ikchal",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/142_Ikchal, Enforcer Prefect.png"
+			}
+		},
+		{
+			"name": "Lobotomy Muse",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Safir Horror",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/144_Lobotomy Muse.png"
+			}
+		},
+		{
+			"name": "Miasma Spiderling",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "146",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/146_Miasma Spiderling.png"
+			}
+		},
+		{
+			"name": "Mind Shred",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Instant",
+			"collector_number": "147",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/147_Mind Shred.png"
+			}
+		},
+		{
+			"name": "Mindshredder Hatchling",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Spider",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/148_Mindshredder Hatchling.png"
+			}
+		},
+		{
+			"name": "Mindshredder Venom",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Enchantment",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/149_Mindshredder Venom.png"
+			}
+		},
+		{
+			"name": "Mindstring Augury",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Instant",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/150_Mindstring Augury.png"
+			}
+		},
+		{
+			"name": "Minutes to Midnight",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Enchantment",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/152_Minutes to Midnight.png"
+			}
+		},
+		{
+			"name": "Molting Corpse",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Naga Zombie",
+			"collector_number": "153",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/153_Molting Corpse.png"
+			}
+		},
+		{
+			"name": "One with Nothing",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/156_One with Nothing.png"
+			}
+		},
+		{
+			"name": "Poisonpalp Brute",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/158_Poisonpalp Brute.png"
+			}
+		},
+		{
+			"name": "Psider Bite",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/160_Psider Bite.png"
+			}
+		},
+		{
+			"name": "Shred Memories",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Sorcery",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/166_Shred Memories.png"
+			}
+		},
+		{
+			"name": "Swarm Host",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Spider",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/170_Swarm Host.png"
+			}
+		},
+		{
+			"name": "Telekinetic Assault",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/172_Telekinetic Assault.png"
+			}
+		},
+		{
+			"name": "Barago's Faithful",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/177_Barago's Faithful.png"
+			}
+		},
+		{
+			"name": "Brightflame Salvo",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Sorcery",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/180_Brightflame Salvo.png"
+			}
+		},
+		{
+			"name": "Frenzied Kavu",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Kavu Berserker",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/190_Frenzied Kavu.png"
+			}
+		},
+		{
+			"name": "Lightning Bolt",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/192_Lightning Bolt.png"
+			}
+		},
+		{
+			"name": "Tyrant's Sigil",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Artifact — Equipment",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/207_Tyrant's Sigil.png"
+			}
+		},
+		{
+			"name": "Palatine Hatchling",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/196_Palatine Hatchling.png"
+			}
+		},
+		{
+			"name": "Pyromancer's Swath",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Enchantment",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/198_Pyromancer's Swath.png"
+			}
+		},
+		{
+			"name": "Ravaged Defenses",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/199_Ravaged Defenses.png"
+			}
+		},
+		{
+			"name": "Show of Force",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/202_Show of Force.png"
+			}
+		},
+		{
+			"name": "Tyrant's Lackey",
+			"rarity": "rare",
+			"mana_cost": "{5}{R}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/206_Tyrant's Lackey.png"
+			}
+		},
+		{
+			"name": "Autumnal Guerrilla",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Naga Warrior",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/210_Autumnal Guerrilla.png"
+			}
+		},
+		{
+			"name": "Dreams of the Homeland",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/214_Dreams of the Homeland.png"
+			}
+		},
+		{
+			"name": "Expeditionary Force",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Naga Scout",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/215_Expeditionary Force.png"
+			}
+		},
+		{
+			"name": "Favor of the Worldmind",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/216_Favor of the Worldmind.png"
+			}
+		},
+		{
+			"name": "Hissing Hypnotist",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Naga",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/218_Hissing Hypnotist.png"
+			}
+		},
+		{
+			"name": "Rattling Mystic",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Naga Druid",
+			"collector_number": "223",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/223_Rattling Mystic.png"
+			}
+		},
+		{
+			"name": "Shamaness of Ergu",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Naga Shaman",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/226_Shamaness of Ergu.png"
+			}
+		},
+		{
+			"name": "Slithering Kestrel",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Bird Druid",
+			"collector_number": "229",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/229_Slithering Kestrel.png"
+			}
+		},
+		{
+			"name": "Strength of Mind",
+			"rarity": "common",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Instant",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/234_Strength of Mind.png"
+			}
+		},
+		{
+			"name": "Vessaran Senseshaper",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Naga",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/238_Vessaran Senseshaper.png"
+			}
+		},
+		{
+			"name": "Rethinking Machine",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/255_Rethinking Machine.png"
+			}
+		},
+		{
+			"name": "Thought Vessel",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/257_Thought Vessel.png"
+			}
+		},
+		{
+			"name": "Boreal Forest",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/260_Boreal Forest.png"
+			}
+		},
+		{
+			"name": "Mangrove Creek",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/267_Mangrove Creek.png"
+			}
+		},
+		{
+			"name": "Murky Brush",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "269",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/269_Murky Brush.png"
+			}
+		},
+		{
+			"name": "Paradise Island",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/270_Paradise Island.png"
+			}
+		},
+		{
+			"name": "Psychic Temple",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/271_Psychic Temple.png"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/276_Plains.png"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "277",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/277_Island.png"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "278",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/278_Swamp.png"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "279",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/279_Mountain.png"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest",
+			"collector_number": "280",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/280_Forest.png"
+			}
+		},
+		{
+			"name": "Angelic Ascension",
+			"rarity": "common",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/3_Angelic Ascension.png"
+			}
+		},
+		{
+			"name": "Helping Hand",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/18_Helping Hand.png"
+			}
+		},
+		{
+			"name": "Honor the Dead",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Sorcery",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/19_Honor the Dead.png"
+			}
+		},
+		{
+			"name": "Vanguard Angel",
+			"rarity": "common",
+			"mana_cost": "{W}{W}{W}",
+			"type": "Creature — Angel Wizard",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/42_Vanguard Angel.png"
+			}
+		},
+		{
+			"name": "Magicicada",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Insect",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/25_Magicicada.png"
+			}
+		},
+		{
+			"name": "Reluctant Footsoldier",
+			"rarity": "common",
+			"mana_cost": "{W}{W}",
+			"type": "Creature — Angel Soldier",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/31_Reluctant Footsoldier.png"
+			}
+		},
+		{
+			"name": "Revered Dead",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Spirit Soldier",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/33_Revered Dead.png"
+			}
+		},
+		{
+			"name": "Sky Marshal Árâdia",
+			"rarity": "rare",
+			"mana_cost": "{5}{W}{W}{W}",
+			"type": "Legendary Creature — Angel Knight",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/36_Sky Marshal Árâdia.png"
+			}
+		},
+		{
+			"name": "Sunlance",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Sorcery",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/39_Sunlance.png"
+			}
+		},
+		{
+			"name": "White Elemental Blast",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{W}",
+			"type": "Instant",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/45_White Elemental Blast.png"
+			}
+		},
+		{
+			"name": "Astral Projection",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/54_Astral Projection.png"
+			}
+		},
+		{
+			"name": "Dismal Failure",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Instant",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/61_Dismal Failure.png"
+			}
+		},
+		{
+			"name": "Embody the Unconscious",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Enchantment",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/62_Embody the Unconscious.png"
+			}
+		},
+		{
+			"name": "Anhirai Sentry",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Safir Soldier",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/53_Anhirai Sentry.png"
+			}
+		},
+		{
+			"name": "Journeyman Augur",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/70_Journeyman Augur.png"
+			}
+		},
+		{
+			"name": "Journeyman Telepath",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/71_Journeyman Telepath.png"
+			}
+		},
+		{
+			"name": "Narcomoeba",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Illusion",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/84_Narcomoeba.png"
+			}
+		},
+		{
+			"name": "Psionic Vampirism",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/90_Psionic Vampirism.png"
+			}
+		},
+		{
+			"name": "Remembrancer's Kainui",
+			"rarity": "common",
+			"mana_cost": "{U}{U}",
+			"type": "Creature — Safir Spirit",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/95_Remembrancer's Kainui.png"
+			}
+		},
+		{
+			"name": "Serious Setback",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}",
+			"type": "Sorcery",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/98_Serious Setback.png"
+			}
+		},
+		{
+			"name": "Teleport",
+			"rarity": "common",
+			"mana_cost": "{U}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/109_Teleport.png"
+			}
+		},
+		{
+			"name": "Wall of Imagination",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Wall",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/116_Wall of Imagination.png"
+			}
+		},
+		{
+			"name": "Aposematism",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/118_Aposematism.png"
+			}
+		},
+		{
+			"name": "Black Elemental Blast",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{B}",
+			"type": "Instant",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/119_Black Elemental Blast.png"
+			}
+		},
+		{
+			"name": "Bloodcurdling Ambush",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Instant",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/120_Bloodcurdling Ambush.png"
+			}
+		},
+		{
+			"name": "Flay the Flesh",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Sorcery",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/135_Flay the Flesh.png"
+			}
+		},
+		{
+			"name": "Force Thought",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/136_Force Thought.png"
+			}
+		},
+		{
+			"name": "Panicspitter",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Scorpion",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/157_Panicspitter.png"
+			}
+		},
+		{
+			"name": "Surrogate Spawning",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/169_Surrogate Spawning.png"
+			}
+		},
+		{
+			"name": "Barago, Draconic Tyrant",
+			"rarity": "rare",
+			"mana_cost": "{5}{R}{R}{R}",
+			"type": "Legendary Creature — Dragon",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/176_Barago, Draconic Tyrant.png"
+			}
+		},
+		{
+			"name": "Breeding Nest",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Enchantment",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/179_Breeding Nest.png"
+			}
+		},
+		{
+			"name": "Burst of Heat",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/181_Burst of Heat.png"
+			}
+		},
+		{
+			"name": "Tarspitter",
+			"rarity": "common",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/205_Tarspitter.png"
+			}
+		},
+		{
+			"name": "Flamebolt Dragon",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/187_Flamebolt Dragon.png"
+			}
+		},
+		{
+			"name": "Gravity Point",
+			"rarity": "common",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/191_Gravity Point.png"
+			}
+		},
+		{
+			"name": "Ruby Eradicator",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/201_Ruby Eradicator.png"
+			}
+		},
+		{
+			"name": "Spiteful Revenant",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Spirit Soldier",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/204_Spiteful Revenant.png"
+			}
+		},
+		{
+			"name": "Warp Away",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/208_Warp Away.png"
+			}
+		},
+		{
+			"name": "Cranaconda",
+			"rarity": "uncommon",
+			"mana_cost": "{6}{G}{G}",
+			"type": "Creature — Naga",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/212_Cranaconda.png"
+			}
+		},
+		{
+			"name": "Cycle of Nature",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/213_Cycle of Nature.png"
+			}
+		},
+		{
+			"name": "Gravitize",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/217_Gravitize.png"
+			}
+		},
+		{
+			"name": "Silent Ichneumon",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Insect",
+			"collector_number": "227",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/227_Silent Ichneumon.png"
+			}
+		},
+		{
+			"name": "Slitherwood Druid",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Naga Druid",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/230_Slitherwood Druid.png"
+			}
+		},
+		{
+			"name": "Spiritual Guide",
+			"rarity": "rare",
+			"mana_cost": "{G}{G}",
+			"type": "Creature — Dryad",
+			"collector_number": "231",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/231_Spiritual Guide.png"
+			}
+		},
+		{
+			"name": "Spring Harvest",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}",
+			"type": "Sorcery",
+			"collector_number": "232",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/232_Spring Harvest.png"
+			}
+		},
+		{
+			"name": "Territorial Duel",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/235_Territorial Duel.png"
+			}
+		},
+		{
+			"name": "Thixl, the Collector",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Legendary Planeswalker — Thixl",
+			"collector_number": "236",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/236_Thixl, the Collector.png"
+			}
+		},
+		{
+			"name": "Aqua Psicryst",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "244",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/244_Aqua Psicryst.png"
+			}
+		},
+		{
+			"name": "Clockwork Widow",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Spider",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/245_Clockwork Widow.png"
+			}
+		},
+		{
+			"name": "Coal Psicryst",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/246_Coal Psicryst.png"
+			}
+		},
+		{
+			"name": "Flame Psicryst",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/248_Flame Psicryst.png"
+			}
+		},
+		{
+			"name": "Ivory Psicryst",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/249_Ivory Psicryst.png"
+			}
+		},
+		{
+			"name": "Subsume",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{C}{C}{C}",
+			"type": "Enchantment — Aura",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/1_Subsume.png"
+			}
+		},
+		{
+			"name": "The Worldmind",
+			"rarity": "rare",
+			"mana_cost": "{14}",
+			"type": "Legendary Creature",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/2_The Worldmind.png"
+			}
+		},
+		{
+			"name": "Stillminds' Coup",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/37_Stillminds' Coup.png"
+			}
+		},
+		{
+			"name": "Dawnbreak Ilâthri",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/14_Dawnbreak Ilâthri.png"
+			}
+		},
+		{
+			"name": "Warp Seraph",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/44_Warp Seraph.png"
+			}
+		},
+		{
+			"name": "Coralwing, Chief Telepath",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Legendary Creature — Safir",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/57_Coralwing, Chief Telepath.png"
+			}
+		},
+		{
+			"name": "Farsight Trance",
+			"rarity": "rare",
+			"mana_cost": "{U}{U}",
+			"type": "Enchantment",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/64_Farsight Trance.png"
+			}
+		},
+		{
+			"name": "Illusory Shapeshifter",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Creature — Safir Rogue",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/69_Illusory Shapeshifter.png"
+			}
+		},
+		{
+			"name": "Memory Addict",
+			"rarity": "rare",
+			"mana_cost": "{6}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/79_Memory Addict.png"
+			}
+		},
+		{
+			"name": "Memory Thief",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/80_Memory Thief.png"
+			}
+		},
+		{
+			"name": "Nessari, Remembrancer",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Legendary Creature — Safir",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/85_Nessari, Remembrancer.png"
+			}
+		},
+		{
+			"name": "Qalanin Repossessor",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/93_Qalanin Repossessor.png"
+			}
+		},
+		{
+			"name": "Shapeshifter's Marrow",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Enchantment",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/99_Shapeshifter's Marrow.png"
+			}
+		},
+		{
+			"name": "Sigil of the Telepath",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/100_Sigil of the Telepath.png"
+			}
+		},
+		{
+			"name": "Trial of Kaêna",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Legendary Enchantment",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/112_Trial of Kaêna.png"
+			}
+		},
+		{
+			"name": "Triumph of the Telepaths",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/113_Triumph of the Telepaths.png"
+			}
+		},
+		{
+			"name": "Whitepetal, Master Earthseer",
+			"rarity": "rare",
+			"mana_cost": "{5}{U}",
+			"type": "Legendary Creature — Safir",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/117_Whitepetal, Master Earthseer.png"
+			}
+		},
+		{
+			"name": "The Dreamweaver Empress",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}{B}{B}",
+			"type": "Legendary Creature — Spider",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/127_The Dreamweaver Empress.png"
+			}
+		},
+		{
+			"name": "Duel of Wills",
+			"rarity": "rare",
+			"mana_cost": "{X}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/128_Duel of Wills.png"
+			}
+		},
+		{
+			"name": "Fallen Remembrancer",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Creature — Safir Spirit",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/132_Fallen Remembrancer.png"
+			}
+		},
+		{
+			"name": "High Queen Varca",
+			"rarity": "rare",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Legendary Creature — Spider",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/139_High Queen Varca.png"
+			}
+		},
+		{
+			"name": "Iktera, the Willbreaker",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}{B}",
+			"type": "Legendary Creature — Spider",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/143_Iktera, the Willbreaker.png"
+			}
+		},
+		{
+			"name": "The Mesmer's Puppetry",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/145_The Mesmer's Puppetry.png"
+			}
+		},
+		{
+			"name": "Minions' Murmurs",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/151_Minions' Murmurs.png"
+			}
+		},
+		{
+			"name": "Numbing Miasma",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Enchantment",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/155_Numbing Miasma.png"
+			}
+		},
+		{
+			"name": "Resonant Mesmer",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}{B}",
+			"type": "Enchantment",
+			"collector_number": "163",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/163_Resonant Mesmer.png"
+			}
+		},
+		{
+			"name": "Seven-legged Goliath",
+			"rarity": "rare",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/164_Seven-legged Goliath.png"
+			}
+		},
+		{
+			"name": "Voidmind Recluse",
+			"rarity": "rare",
+			"mana_cost": "{B}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/175_Voidmind Recluse.png"
+			}
+		},
+		{
+			"name": "Blackrill Lensmind",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}{R}",
+			"type": "Creature — Dragon Shaman",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/178_Blackrill Lensmind.png"
+			}
+		},
+		{
+			"name": "Dragon Dance",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "185",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/185_Dragon Dance.png"
+			}
+		},
+		{
+			"name": "Mindless Rage",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/193_Mindless Rage.png"
+			}
+		},
+		{
+			"name": "Palatinate Mindscorcher",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/194_Palatinate Mindscorcher.png"
+			}
+		},
+		{
+			"name": "Rift Dragon",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/200_Rift Dragon.png"
+			}
+		},
+		{
+			"name": "Archdruid of Vâla",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Naga Shaman",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/209_Archdruid of Vâla.png"
+			}
+		},
+		{
+			"name": "Mortiphage",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Insect",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/220_Mortiphage.png"
+			}
+		},
+		{
+			"name": "Ni, Copperhead General",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}{G}",
+			"type": "Legendary Creature — Naga Knight",
+			"collector_number": "221",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/221_Ni, Copperhead General.png"
+			}
+		},
+		{
+			"name": "Rites of Flourishing",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/224_Rites of Flourishing.png"
+			}
+		},
+		{
+			"name": "Selestir, Marilith Queen",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Legendary Creature — Naga Noble",
+			"collector_number": "225",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/225_Selestir, Marilith Queen.png"
+			}
+		},
+		{
+			"name": "Slithering Advance",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/228_Slithering Advance.png"
+			}
+		},
+		{
+			"name": "Trial of Vâla",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Legendary Enchantment",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/237_Trial of Vâla.png"
+			}
+		},
+		{
+			"name": "Erase Memories",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{B}",
+			"type": "Instant",
+			"collector_number": "239",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/239_Erase Memories.png"
+			}
+		},
+		{
+			"name": "Psionic Immortality",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Enchantment",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/161_Psionic Immortality.png"
+			}
+		},
+		{
+			"name": "Vitalizing Cascade",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{G}{W}",
+			"type": "Instant",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/241_Vitalizing Cascade.png"
+			}
+		},
+		{
+			"name": "Mindwake Blade",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact — Equipment",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/250_Mindwake Blade.png"
+			}
+		},
+		{
+			"name": "Venser's Journal",
+			"rarity": "uncommon",
+			"mana_cost": "{5}",
+			"type": "Artifact",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/258_Venser's Journal.png"
+			}
+		},
+		{
+			"name": "Abyssal Cavern",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/259_Abyssal Cavern.png"
+			}
+		},
+		{
+			"name": "Tepui",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/274_Tepui.png"
+			}
+		},
+		{
+			"name": "Barter for Hope",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/11_Barter for Hope.png"
+			}
+		},
+		{
+			"name": "Mind Blank",
+			"rarity": "common",
+			"mana_cost": "{W}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/26_Mind Blank.png"
+			}
+		},
+		{
+			"name": "Renewed Faith",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Sorcery",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/32_Renewed Faith.png"
+			}
+		},
+		{
+			"name": "Rite of Preservation",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/34_Rite of Preservation.png"
+			}
+		},
+		{
+			"name": "Thoughts of Strength",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/41_Thoughts of Strength.png"
+			}
+		},
+		{
+			"name": "Alliance Farseer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Safir Advisor",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/48_Alliance Farseer.png"
+			}
+		},
+		{
+			"name": "Amiable Empath",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/50_Amiable Empath.png"
+			}
+		},
+		{
+			"name": "Farsight",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{X}{U}",
+			"type": "Enchantment",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/63_Farsight.png"
+			}
+		},
+		{
+			"name": "Gust Manipulator",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/67_Gust Manipulator.png"
+			}
+		},
+		{
+			"name": "Thought Police",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{U}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/110_Thought Police.png"
+			}
+		},
+		{
+			"name": "Hydrokinetic Master",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/68_Hydrokinetic Master.png"
+			}
+		},
+		{
+			"name": "Kaêna's Blessing",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{U}{U}",
+			"type": "Enchantment",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/72_Kaêna's Blessing.png"
+			}
+		},
+		{
+			"name": "Mindbreaker Empath",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}{U}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/83_Mindbreaker Empath.png"
+			}
+		},
+		{
+			"name": "People of the Mask",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}{U}",
+			"type": "Creature",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/89_People of the Mask.png"
+			}
+		},
+		{
+			"name": "Second Wind",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/97_Second Wind.png"
+			}
+		},
+		{
+			"name": "Slave to the Mesmer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/101_Slave to the Mesmer.png"
+			}
+		},
+		{
+			"name": "Tamiyo, Mentat Supreme",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Legendary Planeswalker — Tamiyo",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/106_Tamiyo, Mentat Supreme.png"
+			}
+		},
+		{
+			"name": "Tamper",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/107_Tamper.png"
+			}
+		},
+		{
+			"name": "Eggsac Strider",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/129_Eggsac Strider.png"
+			}
+		},
+		{
+			"name": "Evoke Horror",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/131_Evoke Horror.png"
+			}
+		},
+		{
+			"name": "Fearspindle Spider",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/133_Fearspindle Spider.png"
+			}
+		},
+		{
+			"name": "Hexing Monarch",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/138_Hexing Monarch.png"
+			}
+		},
+		{
+			"name": "Homicidal Tendencies",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/140_Homicidal Tendencies.png"
+			}
+		},
+		{
+			"name": "Prison Spinner",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Spider Wizard",
+			"collector_number": "159",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/159_Prison Spinner.png"
+			}
+		},
+		{
+			"name": "Shatter Mind Blank",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{B}",
+			"type": "Instant",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/165_Shatter Mind Blank.png"
+			}
+		},
+		{
+			"name": "Sightless Dreamweaver",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/167_Sightless Dreamweaver.png"
+			}
+		},
+		{
+			"name": "Silkbind",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/168_Silkbind.png"
+			}
+		},
+		{
+			"name": "Venomous Ambush",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Instant",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/173_Venomous Ambush.png"
+			}
+		},
+		{
+			"name": "Pyrokinetic Tag",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{R}",
+			"type": "Instant",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/197_Pyrokinetic Tag.png"
+			}
+		},
+		{
+			"name": "Charred Flesh",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Instant",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/182_Charred Flesh.png"
+			}
+		},
+		{
+			"name": "Draconian Emissary",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dragon Mystic",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/183_Draconian Emissary.png"
+			}
+		},
+		{
+			"name": "Draconic Dreams",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Enchantment",
+			"collector_number": "184",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/184_Draconic Dreams.png"
+			}
+		},
+		{
+			"name": "Dragon Speech",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/186_Dragon Speech.png"
+			}
+		},
+		{
+			"name": "Flameweaver",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Spellshaper",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/188_Flameweaver.png"
+			}
+		},
+		{
+			"name": "Spirit of Mount Aran",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Creature — Dragon Spirit",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/203_Spirit of Mount Aran.png"
+			}
+		},
+		{
+			"name": "Copperhead Cartographer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Naga Knight",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/211_Copperhead Cartographer.png"
+			}
+		},
+		{
+			"name": "Rattling Conduit",
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+			"type": "Creature — Naga",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/222_Rattling Conduit.png"
+			}
+		},
+		{
+			"name": "Kinetic Python",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Naga",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/219_Kinetic Python.png"
+			}
+		},
+		{
+			"name": "Springcaller Python",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Naga Shaman",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/233_Springcaller Python.png"
+			}
+		},
+		{
+			"name": "Leaf-Winged Earthbender",
+			"rarity": "common",
+			"mana_cost": "{G}{W}",
+			"type": "Creature — Dryad Angel",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/240_Leaf-Winged Earthbender.png"
+			}
+		},
+		{
+			"name": "Electrokinesis",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Instant",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/242_Electrokinesis.png"
+			}
+		},
+		{
+			"name": "Fledgling Phoenix",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Creature — Phoenix",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/189_Fledgling Phoenix.png"
+			}
+		},
+		{
+			"name": "Emerald Psicryst",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/247_Emerald Psicryst.png"
+			}
+		},
+		{
+			"name": "Neurograft",
+			"rarity": "rare",
+			"mana_cost": "{5}",
+			"type": "Artifact",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/251_Neurograft.png"
+			}
+		},
+		{
+			"name": "Pithing Needle",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/252_Pithing Needle.png"
+			}
+		},
+		{
+			"name": "Psydric Obelisk",
+			"rarity": "rare",
+			"mana_cost": "{5}",
+			"type": "Artifact",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/253_Psydric Obelisk.png"
+			}
+		},
+		{
+			"name": "Refraction Hive",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/254_Refraction Hive.png"
+			}
+		},
+		{
+			"name": "Crater Lake",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/262_Crater Lake.png"
+			}
+		},
+		{
+			"name": "Frozen Expanse",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/265_Frozen Expanse.png"
+			}
+		},
+		{
+			"name": "Inland Waste",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/266_Inland Waste.png"
+			}
+		},
+		{
+			"name": "Thoughtbloom",
+			"rarity": "common",
+			"mana_cost": "{W}{W}",
+			"type": "Instant",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/40_Thoughtbloom.png"
+			}
+		},
+		{
+			"name": "Anhirai Oppressor",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/52_Anhirai Oppressor.png"
+			}
+		},
+		{
+			"name": "Conscript of Anhira",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Safir",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/56_Conscript of Anhira.png"
+			}
+		},
+		{
+			"name": "Countermark",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/58_Countermark.png"
+			}
+		},
+		{
+			"name": "Alliance Scout",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Safir Ranger",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/49_Alliance Scout.png"
+			}
+		},
+		{
+			"name": "Anhirai Cannoneer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Safir Soldier",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/51_Anhirai Cannoneer.png"
+			}
+		},
+		{
+			"name": "Unthink",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/114_Unthink.png"
+			}
+		},
+		{
+			"name": "Clay Pit",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/261_Clay Pit.png"
+			}
+		},
+		{
+			"name": "Crystal Falls",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/263_Crystal Falls.png"
+			}
+		},
+		{
+			"name": "Floating Temple",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/264_Floating Temple.png"
+			}
+		},
+		{
+			"name": "Meadow",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/268_Meadow.png"
+			}
+		},
+		{
+			"name": "Spider Web",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "273",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/273_Spider Web.png"
+			}
+		},
+		{
+			"name": "Lost in Thought",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Enchantment",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/23_Lost in Thought.png"
+			}
+		},
+		{
+			"name": "Prayer for Relief",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Instant",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/30_Prayer for Relief.png"
+			}
+		},
+		{
+			"name": "Kinetic Master",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Safir",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/73_Kinetic Master.png"
+			}
+		},
+		{
+			"name": "Lust for Knowledge",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/77_Lust for Knowledge.png"
+			}
+		},
+		{
+			"name": "Masquerade Dancer",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Safir Rogue",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/78_Masquerade Dancer.png"
+			}
+		},
+		{
+			"name": "Qalanin Telepath",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Safir Advisor",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/94_Qalanin Telepath.png"
+			}
+		},
+		{
+			"name": "Dreamweaver Drone",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/126_Dreamweaver Drone.png"
+			}
+		},
+		{
+			"name": "Enter the Mesmer",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/130_Enter the Mesmer.png"
+			}
+		},
+		{
+			"name": "Nightmare Weaver",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Spider Horror",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/154_Nightmare Weaver.png"
+			}
+		},
+		{
+			"name": "Psydric Mindbreakers",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/162_Psydric Mindbreakers.png"
+			}
+		},
+		{
+			"name": "Swarm-Rouser",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/171_Swarm-Rouser.png"
+			}
+		},
+		{
+			"name": "Palatinate Reinforcements",
+			"rarity": "common",
+			"mana_cost": "{5}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/195_Palatinate Reinforcements.png"
+			}
+		},
+		{
+			"name": "Amorphous Golem",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Golem",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/243_Amorphous Golem.png"
+			}
+		},
+		{
+			"name": "Steel Phoenix",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Phoenix Construct",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/256_Steel Phoenix.png"
+			}
+		},
+		{
+			"name": "Aigwêrion Mismar",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Emblem — Mismar",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/9_Aigwêrion Mismar.png"
+			}
+		},
+		{
+			"name": "Ikchal, Enforcer Prefect",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Emblem — Ikchal",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/10_Ikchal, Enforcer Prefect.png"
+			}
+		},
+		{
+			"name": "Tamiyo, Mentat Supreme",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Emblem — Tamiyo",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/11_Tamiyo, Mentat Supreme.png"
+			}
+		},
+		{
+			"name": "Angel",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Angel",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/1_Angel.png"
+			}
+		},
+		{
+			"name": "Soldier",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Soldier",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/3_Soldier.png"
+			}
+		},
+		{
+			"name": "Bird",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Bird",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/2_Bird.png"
+			}
+		},
+		{
+			"name": "Spider",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Spider",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/4_Spider.png"
+			}
+		},
+		{
+			"name": "Elemental",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Elemental",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/5_Elemental.png"
+			}
+		},
+		{
+			"name": "Insect",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Insect",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/6_Insect.png"
+			}
+		},
+		{
+			"name": "Naga",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Naga",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/7_Naga.png"
+			}
+		},
+		{
+			"name": "Plant",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Plant",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/8_Plant.png"
+			}
+		},
+		{
+			"name": "Coup d'État",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/122_Coup d'État.png"
+			}
+		},
+		{
+			"name": "Lunar Force",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/76_Lunar Force.png"
+			}
+		},
+		{
+			"name": "RL41",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/272_RL41.png"
+			}
+		},
+		{
+			"name": "Wastes",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://halian.github.io/sets/SFR-files/img/275_Wastes.png"
+			}
+		},
+	]
+
+[rare(1)]
+	5 Archangel of Peace
+	5 Aviru, Guardian of Airuthien
+	5 Domina of Strength
+	5 Defender of Airuthien
+	5 Inquisitor's Hall
+	5 Mount Aran Honor Guard
+	5 Shatter the Mundanes
+	5 Vitalizing Nostalgia
+	5 Worldspine Bachelor
+	5 Aigwêrion Mismar
+	5 Nix
+	5 Psychic Surgery
+	5 Spellweaver Volute
+	5 Stifle
+	5 Cruel Bargain
+	5 Ikchal, Enforcer Prefect
+	5 Minutes to Midnight
+	5 One with Nothing
+	5 Pyromancer's Swath
+	5 Tyrant's Lackey
+	5 Boreal Forest
+	5 Mangrove Creek
+	5 Murky Brush
+	5 Paradise Island
+	5 Sky Marshal Árâdia
+	5 Embody the Unconscious
+	5 Barago, Draconic Tyrant
+	5 Cycle of Nature
+	5 Spiritual Guide
+	5 Thixl, the Collector
+	5 The Worldmind
+	5 Stillminds' Coup
+	5 Warp Seraph
+	5 Coralwing, Chief Telepath
+	5 Farsight Trance
+	5 Illusory Shapeshifter
+	5 Memory Addict
+	5 Memory Thief
+	5 Nessari, Remembrancer
+	5 Qalanin Repossessor
+	5 Shapeshifter's Marrow
+	5 Sigil of the Telepath
+	5 Trial of Kaêna
+	5 Triumph of the Telepaths
+	5 Whitepetal, Master Earthseer
+	5 The Dreamweaver Empress
+	5 Duel of Wills
+	5 Fallen Remembrancer
+	5 High Queen Varca
+	5 Iktera, the Willbreaker
+	5 The Mesmer's Puppetry
+	5 Numbing Miasma
+	5 Resonant Mesmer
+	5 Seven-legged Goliath
+	5 Voidmind Recluse
+	5 Blackrill Lensmind
+	5 Palatinate Mindscorcher
+	5 Rift Dragon
+	5 Archdruid of Vâla
+	5 Ni, Copperhead General
+	5 Rites of Flourishing
+	5 Selestir, Marilith Queen
+	5 Trial of Vâla
+	5 Psionic Immortality
+	5 Abyssal Cavern
+	5 Tepui
+	5 Rite of Preservation
+	5 Amiable Empath
+	5 Tamiyo, Mentat Supreme
+	5 Draconian Emissary
+	5 Dragon Speech
+	5 Neurograft
+	5 Pithing Needle
+	5 Psydric Obelisk
+	5 Refraction Hive
+	5 Crater Lake
+	5 Frozen Expanse
+	5 Inland Waste
+	5 Countermark
+	5 Lost in Thought
+	5 Prayer for Relief
+	5 Coup d'État
+	5 RL41
+[uncommon(3)]
+	5 Ilâthri Warmage
+	5 Archangel of Calm
+	5 Ashura of Restoration
+	5 Aven Mindcensor
+	5 Crusader of Enâra
+	5 Even the Odds
+	5 Peace of Mind
+	5 Substitute
+	5 Cryptic Annelid
+	5 Psychic Awakening
+	5 Split Personality
+	5 Telepathy
+	5 Feast on Memories
+	5 Mind Shred
+	5 Mindshredder Venom
+	5 Mindstring Augury
+	5 Poisonpalp Brute
+	5 Brightflame Salvo
+	5 Tyrant's Sigil
+	5 Dreams of the Homeland
+	5 Hissing Hypnotist
+	5 Vessaran Senseshaper
+	5 Psychic Temple
+	5 Helping Hand
+	5 White Elemental Blast
+	5 Astral Projection
+	5 Dismal Failure
+	5 Anhirai Sentry
+	5 Narcomoeba
+	5 Psionic Vampirism
+	5 Serious Setback
+	5 Aposematism
+	5 Black Elemental Blast
+	5 Flay the Flesh
+	5 Force Thought
+	5 Breeding Nest
+	5 Burst of Heat
+	5 Flamebolt Dragon
+	5 Ruby Eradicator
+	5 Spiteful Revenant
+	5 Cranaconda
+	5 Gravitize
+	5 Silent Ichneumon
+	5 Spring Harvest
+	5 Aqua Psicryst
+	5 Coal Psicryst
+	5 Flame Psicryst
+	5 Ivory Psicryst
+	5 Subsume
+	5 Dawnbreak Ilâthri
+	5 Minions' Murmurs
+	5 Dragon Dance
+	5 Mindless Rage
+	5 Mortiphage
+	5 Slithering Advance
+	5 Erase Memories
+	5 Vitalizing Cascade
+	5 Mindwake Blade
+	5 Venser's Journal
+	5 Barter for Hope
+	5 Renewed Faith
+	5 Thoughts of Strength
+	5 Alliance Farseer
+	5 Farsight
+	5 Gust Manipulator
+	5 Thought Police
+	5 Hydrokinetic Master
+	5 Kaêna's Blessing
+	5 Mindbreaker Empath
+	5 People of the Mask
+	5 Second Wind
+	5 Slave to the Mesmer
+	5 Tamper
+	5 Eggsac Strider
+	5 Evoke Horror
+	5 Fearspindle Spider
+	5 Hexing Monarch
+	5 Homicidal Tendencies
+	5 Prison Spinner
+	5 Shatter Mind Blank
+	5 Sightless Dreamweaver
+	5 Silkbind
+	5 Venomous Ambush
+	5 Pyrokinetic Tag
+	5 Charred Flesh
+	5 Draconic Dreams
+	5 Flameweaver
+	5 Spirit of Mount Aran
+	5 Copperhead Cartographer
+	5 Rattling Conduit
+	5 Kinetic Python
+	5 Springcaller Python
+	5 Electrokinesis
+	5 Fledgling Phoenix
+	5 Emerald Psicryst
+	5 Anhirai Cannoneer
+	5 Clay Pit
+	5 Crystal Falls
+	5 Floating Temple
+	5 Meadow
+	5 Spider Web
+	5 Nightmare Weaver
+	5 Lunar Force
+[common(10)]
+	5 Aviru's Inquisitor
+	5 Call for Help
+	5 Aven Nightwatch
+	5 Hypnotic Glare
+	5 Lucent Liminid
+	5 Order of Mount Aran
+	5 Mental Defenses
+	5 Flash of Insight
+	5 Mind-Flight Novice
+	5 Astral Reinforcements
+	5 Counterspell
+	5 Librarian of Kaêna
+	5 Foresee
+	5 Librarian of Mishe
+	5 Novice Mindcensor
+	5 Overwhelming Resonance
+	5 Rethink
+	5 Sleep
+	5 Thoughtful Meditation
+	5 Vision Skeins
+	5 Vision of the Mesmer
+	5 Boneyard Sentinel
+	5 Delirium Skeins
+	5 Dream Feast
+	5 Forget
+	5 Hunger for Blood
+	5 Lobotomy Muse
+	5 Miasma Spiderling
+	5 Mindshredder Hatchling
+	5 Molting Corpse
+	5 Psider Bite
+	5 Shred Memories
+	5 Swarm Host
+	5 Telekinetic Assault
+	5 Barago's Faithful
+	5 Frenzied Kavu
+	5 Lightning Bolt
+	5 Palatine Hatchling
+	5 Ravaged Defenses
+	5 Show of Force
+	5 Autumnal Guerrilla
+	5 Expeditionary Force
+	5 Favor of the Worldmind
+	5 Rattling Mystic
+	5 Shamaness of Ergu
+	5 Slithering Kestrel
+	5 Strength of Mind
+	5 Rethinking Machine
+	5 Thought Vessel
+	5 Angelic Ascension
+	5 Honor the Dead
+	5 Vanguard Angel
+	5 Magicicada
+	5 Reluctant Footsoldier
+	5 Revered Dead
+	5 Sunlance
+	5 Journeyman Augur
+	5 Journeyman Telepath
+	5 Remembrancer's Kainui
+	5 Teleport
+	5 Wall of Imagination
+	5 Bloodcurdling Ambush
+	5 Panicspitter
+	5 Surrogate Spawning
+	5 Tarspitter
+	5 Gravity Point
+	5 Warp Away
+	5 Slitherwood Druid
+	5 Territorial Duel
+	5 Clockwork Widow
+	5 Mind Blank
+	5 Leaf-Winged Earthbender
+	5 Thoughtbloom
+	5 Anhirai Oppressor
+	5 Conscript of Anhira
+	5 Alliance Scout
+	5 Unthink
+	5 Kinetic Master
+	5 Lust for Knowledge
+	5 Masquerade Dancer
+	5 Qalanin Telepath
+	5 Dreamweaver Drone
+	5 Enter the Mesmer
+	5 Psydric Mindbreakers
+	5 Swarm-Rouser
+	5 Palatinate Reinforcements
+	5 Amorphous Golem
+	5 Steel Phoenix

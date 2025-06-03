@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/sets/SFR-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>SFR visual preview</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('/img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('/img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 1%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('/img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('/img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.icon-bar {
+			display: grid;
+			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
+			gap: 1px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			justify-items: center;
+			align-items: center;
+		}
+		.icon-bar .icon img {
+			width: 90%;
+			max-width: 80px;
+			height: auto;
+			display: block;
+			padding: 5%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon-bar .dot img {
+			width: 50%;
+			max-width: 65px;
+			height: auto;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/SFR-files/logo.png" />
+	<img class="preload-hidden" src="/sets/SFR-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="icon-bar">
+			<div class="icon"><a href="SFR"><img src="/sets/SFR-files/icon.png"></img></a></div>
+
+		</div>
+		<div class="banner">
+		<img class="logo" src="/sets/SFR-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+				<div class="container"><img alt="/sets\SFR-files\img\5_Archangel of Peace.png" id="5_Archangel of Peace" data-flag="@X" onclick="openSidebar('5_Archangel of Peace',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\47_Aigwêrion Mismar.png" id="47_Aigwêrion Mismar" data-flag="@X" onclick="openSidebar('47_Aigwêrion Mismar',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\122_Coup d'État.png" id="122_Coup dÉtat" data-flag="@X" onclick="openSidebar('122_Coup dÉtat',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\176_Barago, Draconic Tyrant.png" id="176_Barago, Draconic Tyrant" data-flag="@X" onclick="openSidebar('176_Barago, Draconic Tyrant',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\209_Archdruid of Vâla.png" id="209_Archdruid of Vâla" data-flag="@X" onclick="openSidebar('209_Archdruid of Vâla',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\9_Aviru, Guardian of Airuthien.png" id="9_Aviru, Guardian of Airuthien" data-flag="@X" onclick="openSidebar('9_Aviru, Guardian of Airuthien',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\50_Amiable Empath.png" id="50_Amiable Empath" data-flag="@X" onclick="openSidebar('50_Amiable Empath',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\123_Cruel Bargain.png" id="123_Cruel Bargain" data-flag="@X" onclick="openSidebar('123_Cruel Bargain',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\178_Blackrill Lensmind.png" id="178_Blackrill Lensmind" data-flag="@X" onclick="openSidebar('178_Blackrill Lensmind',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\213_Cycle of Nature.png" id="213_Cycle of Nature" data-flag="@X" onclick="openSidebar('213_Cycle of Nature',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\15_Defender of Airuthien.png" id="15_Defender of Airuthien" data-flag="@X" onclick="openSidebar('15_Defender of Airuthien',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\57_Coralwing, Chief Telepath.png" id="57_Coralwing, Chief Telepath" data-flag="@X" onclick="openSidebar('57_Coralwing, Chief Telepath',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\127_The Dreamweaver Empress.png" id="127_The Dreamweaver Empress" data-flag="@X" onclick="openSidebar('127_The Dreamweaver Empress',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\183_Draconian Emissary.png" id="183_Draconian Emissary" data-flag="@X" onclick="openSidebar('183_Draconian Emissary',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\221_Ni, Copperhead General.png" id="221_Ni, Copperhead General" data-flag="@X" onclick="openSidebar('221_Ni, Copperhead General',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\16_Domina of Strength.png" id="16_Domina of Strength" data-flag="@X" onclick="openSidebar('16_Domina of Strength',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\58_Countermark.png" id="58_Countermark" data-flag="@X" onclick="openSidebar('58_Countermark',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\128_Duel of Wills.png" id="128_Duel of Wills" data-flag="@X" onclick="openSidebar('128_Duel of Wills',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\186_Dragon Speech.png" id="186_Dragon Speech" data-flag="@X" onclick="openSidebar('186_Dragon Speech',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\224_Rites of Flourishing.png" id="224_Rites of Flourishing" data-flag="@X" onclick="openSidebar('224_Rites of Flourishing',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\22_Inquisitor's Hall.png" id="22_Inquisitors Hall" data-flag="@X" onclick="openSidebar('22_Inquisitors Hall',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\62_Embody the Unconscious.png" id="62_Embody the Unconscious" data-flag="@X" onclick="openSidebar('62_Embody the Unconscious',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\132_Fallen Remembrancer.png" id="132_Fallen Remembrancer" data-flag="@X" onclick="openSidebar('132_Fallen Remembrancer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\194_Palatinate Mindscorcher.png" id="194_Palatinate Mindscorcher" data-flag="@X" onclick="openSidebar('194_Palatinate Mindscorcher',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\225_Selestir, Marilith Queen.png" id="225_Selestir, Marilith Queen" data-flag="@X" onclick="openSidebar('225_Selestir, Marilith Queen',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\23_Lost in Thought.png" id="23_Lost in Thought" data-flag="@X" onclick="openSidebar('23_Lost in Thought',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\64_Farsight Trance.png" id="64_Farsight Trance" data-flag="@X" onclick="openSidebar('64_Farsight Trance',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\139_High Queen Varca.png" id="139_High Queen Varca" data-flag="@X" onclick="openSidebar('139_High Queen Varca',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\198_Pyromancer's Swath.png" id="198_Pyromancers Swath" data-flag="@X" onclick="openSidebar('198_Pyromancers Swath',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\231_Spiritual Guide.png" id="231_Spiritual Guide" data-flag="@X" onclick="openSidebar('231_Spiritual Guide',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\27_Mount Aran Honor Guard.png" id="27_Mount Aran Honor Guard" data-flag="@X" onclick="openSidebar('27_Mount Aran Honor Guard',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\69_Illusory Shapeshifter.png" id="69_Illusory Shapeshifter" data-flag="@X" onclick="openSidebar('69_Illusory Shapeshifter',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\142_Ikchal, Enforcer Prefect.png" id="142_Ikchal, Enforcer Prefect" data-flag="@X" onclick="openSidebar('142_Ikchal, Enforcer Prefect',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\200_Rift Dragon.png" id="200_Rift Dragon" data-flag="@X" onclick="openSidebar('200_Rift Dragon',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\236_Thixl, the Collector.png" id="236_Thixl, the Collector" data-flag="@X" onclick="openSidebar('236_Thixl, the Collector',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\30_Prayer for Relief.png" id="30_Prayer for Relief" data-flag="@X" onclick="openSidebar('30_Prayer for Relief',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\79_Memory Addict.png" id="79_Memory Addict" data-flag="@X" onclick="openSidebar('79_Memory Addict',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\143_Iktera, the Willbreaker.png" id="143_Iktera, the Willbreaker" data-flag="@X" onclick="openSidebar('143_Iktera, the Willbreaker',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\206_Tyrant's Lackey.png" id="206_Tyrants Lackey" data-flag="@X" onclick="openSidebar('206_Tyrants Lackey',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\237_Trial of Vâla.png" id="237_Trial of Vâla" data-flag="@X" onclick="openSidebar('237_Trial of Vâla',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\34_Rite of Preservation.png" id="34_Rite of Preservation" data-flag="@X" onclick="openSidebar('34_Rite of Preservation',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\80_Memory Thief.png" id="80_Memory Thief" data-flag="@X" onclick="openSidebar('80_Memory Thief',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\145_The Mesmer's Puppetry.png" id="145_The Mesmers Puppetry" data-flag="@X" onclick="openSidebar('145_The Mesmers Puppetry',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\179_Breeding Nest.png" id="179_Breeding Nest" data-flag="@X" onclick="openSidebar('179_Breeding Nest',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\211_Copperhead Cartographer.png" id="211_Copperhead Cartographer" data-flag="@X" onclick="openSidebar('211_Copperhead Cartographer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\35_Shatter the Mundanes.png" id="35_Shatter the Mundanes" data-flag="@X" onclick="openSidebar('35_Shatter the Mundanes',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\85_Nessari, Remembrancer.png" id="85_Nessari, Remembrancer" data-flag="@X" onclick="openSidebar('85_Nessari, Remembrancer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\152_Minutes to Midnight.png" id="152_Minutes to Midnight" data-flag="@X" onclick="openSidebar('152_Minutes to Midnight',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\180_Brightflame Salvo.png" id="180_Brightflame Salvo" data-flag="@X" onclick="openSidebar('180_Brightflame Salvo',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\212_Cranaconda.png" id="212_Cranaconda" data-flag="@X" onclick="openSidebar('212_Cranaconda',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\36_Sky Marshal Árâdia.png" id="36_Sky Marshal Árâdia" data-flag="@X" onclick="openSidebar('36_Sky Marshal Árâdia',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\86_Nix.png" id="86_Nix" data-flag="@X" onclick="openSidebar('86_Nix',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\155_Numbing Miasma.png" id="155_Numbing Miasma" data-flag="@X" onclick="openSidebar('155_Numbing Miasma',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\181_Burst of Heat.png" id="181_Burst of Heat" data-flag="@X" onclick="openSidebar('181_Burst of Heat',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\214_Dreams of the Homeland.png" id="214_Dreams of the Homeland" data-flag="@X" onclick="openSidebar('214_Dreams of the Homeland',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\37_Stillminds' Coup.png" id="37_Stillminds Coup" data-flag="@X" onclick="openSidebar('37_Stillminds Coup',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\92_Psychic Surgery.png" id="92_Psychic Surgery" data-flag="@X" onclick="openSidebar('92_Psychic Surgery',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\156_One with Nothing.png" id="156_One with Nothing" data-flag="@X" onclick="openSidebar('156_One with Nothing',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\182_Charred Flesh.png" id="182_Charred Flesh" data-flag="@X" onclick="openSidebar('182_Charred Flesh',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\217_Gravitize.png" id="217_Gravitize" data-flag="@X" onclick="openSidebar('217_Gravitize',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\43_Vitalizing Nostalgia.png" id="43_Vitalizing Nostalgia" data-flag="@X" onclick="openSidebar('43_Vitalizing Nostalgia',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\93_Qalanin Repossessor.png" id="93_Qalanin Repossessor" data-flag="@X" onclick="openSidebar('93_Qalanin Repossessor',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\161_Psionic Immortality.png" id="161_Psionic Immortality" data-flag="@X" onclick="openSidebar('161_Psionic Immortality',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\184_Draconic Dreams.png" id="184_Draconic Dreams" data-flag="@X" onclick="openSidebar('184_Draconic Dreams',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\218_Hissing Hypnotist.png" id="218_Hissing Hypnotist" data-flag="@X" onclick="openSidebar('218_Hissing Hypnotist',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\44_Warp Seraph.png" id="44_Warp Seraph" data-flag="@X" onclick="openSidebar('44_Warp Seraph',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\99_Shapeshifter's Marrow.png" id="99_Shapeshifters Marrow" data-flag="@X" onclick="openSidebar('99_Shapeshifters Marrow',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\163_Resonant Mesmer.png" id="163_Resonant Mesmer" data-flag="@X" onclick="openSidebar('163_Resonant Mesmer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\185_Dragon Dance.png" id="185_Dragon Dance" data-flag="@X" onclick="openSidebar('185_Dragon Dance',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\219_Kinetic Python.png" id="219_Kinetic Python" data-flag="@X" onclick="openSidebar('219_Kinetic Python',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\46_Worldspine Bachelor.png" id="46_Worldspine Bachelor" data-flag="@X" onclick="openSidebar('46_Worldspine Bachelor',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\100_Sigil of the Telepath.png" id="100_Sigil of the Telepath" data-flag="@X" onclick="openSidebar('100_Sigil of the Telepath',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\164_Seven-legged Goliath.png" id="164_Seven-legged Goliath" data-flag="@X" onclick="openSidebar('164_Seven-legged Goliath',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\187_Flamebolt Dragon.png" id="187_Flamebolt Dragon" data-flag="@X" onclick="openSidebar('187_Flamebolt Dragon',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\220_Mortiphage.png" id="220_Mortiphage" data-flag="@X" onclick="openSidebar('220_Mortiphage',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\4_Archangel of Calm.png" id="4_Archangel of Calm" data-flag="@X" onclick="openSidebar('4_Archangel of Calm',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\103_Spellweaver Volute.png" id="103_Spellweaver Volute" data-flag="@X" onclick="openSidebar('103_Spellweaver Volute',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\175_Voidmind Recluse.png" id="175_Voidmind Recluse" data-flag="@X" onclick="openSidebar('175_Voidmind Recluse',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\188_Flameweaver.png" id="188_Flameweaver" data-flag="@X" onclick="openSidebar('188_Flameweaver',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\222_Rattling Conduit.png" id="222_Rattling Conduit" data-flag="@X" onclick="openSidebar('222_Rattling Conduit',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\6_Ashura of Restoration.png" id="6_Ashura of Restoration" data-flag="@X" onclick="openSidebar('6_Ashura of Restoration',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\105_Stifle.png" id="105_Stifle" data-flag="@X" onclick="openSidebar('105_Stifle',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\118_Aposematism.png" id="118_Aposematism" data-flag="@X" onclick="openSidebar('118_Aposematism',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\189_Fledgling Phoenix.png" id="189_Fledgling Phoenix" data-flag="@X" onclick="openSidebar('189_Fledgling Phoenix',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\227_Silent Ichneumon.png" id="227_Silent Ichneumon" data-flag="@X" onclick="openSidebar('227_Silent Ichneumon',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\7_Aven Mindcensor.png" id="7_Aven Mindcensor" data-flag="@X" onclick="openSidebar('7_Aven Mindcensor',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\106_Tamiyo, Mentat Supreme.png" id="106_Tamiyo, Mentat Supreme" data-flag="@X" onclick="openSidebar('106_Tamiyo, Mentat Supreme',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\119_Black Elemental Blast.png" id="119_Black Elemental Blast" data-flag="@X" onclick="openSidebar('119_Black Elemental Blast',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\193_Mindless Rage.png" id="193_Mindless Rage" data-flag="@X" onclick="openSidebar('193_Mindless Rage',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\228_Slithering Advance.png" id="228_Slithering Advance" data-flag="@X" onclick="openSidebar('228_Slithering Advance',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\11_Barter for Hope.png" id="11_Barter for Hope" data-flag="@X" onclick="openSidebar('11_Barter for Hope',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\112_Trial of Kaêna.png" id="112_Trial of Kaêna" data-flag="@X" onclick="openSidebar('112_Trial of Kaêna',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\129_Eggsac Strider.png" id="129_Eggsac Strider" data-flag="@X" onclick="openSidebar('129_Eggsac Strider',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\197_Pyrokinetic Tag.png" id="197_Pyrokinetic Tag" data-flag="@X" onclick="openSidebar('197_Pyrokinetic Tag',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\232_Spring Harvest.png" id="232_Spring Harvest" data-flag="@X" onclick="openSidebar('232_Spring Harvest',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\13_Crusader of Enâra.png" id="13_Crusader of Enâra" data-flag="@X" onclick="openSidebar('13_Crusader of Enâra',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\113_Triumph of the Telepaths.png" id="113_Triumph of the Telepaths" data-flag="@X" onclick="openSidebar('113_Triumph of the Telepaths',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\131_Evoke Horror.png" id="131_Evoke Horror" data-flag="@X" onclick="openSidebar('131_Evoke Horror',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\201_Ruby Eradicator.png" id="201_Ruby Eradicator" data-flag="@X" onclick="openSidebar('201_Ruby Eradicator',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\233_Springcaller Python.png" id="233_Springcaller Python" data-flag="@X" onclick="openSidebar('233_Springcaller Python',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\14_Dawnbreak Ilâthri.png" id="14_Dawnbreak Ilâthri" data-flag="@X" onclick="openSidebar('14_Dawnbreak Ilâthri',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\117_Whitepetal, Master Earthseer.png" id="117_Whitepetal, Master Earthseer" data-flag="@X" onclick="openSidebar('117_Whitepetal, Master Earthseer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\133_Fearspindle Spider.png" id="133_Fearspindle Spider" data-flag="@X" onclick="openSidebar('133_Fearspindle Spider',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\203_Spirit of Mount Aran.png" id="203_Spirit of Mount Aran" data-flag="@X" onclick="openSidebar('203_Spirit of Mount Aran',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\238_Vessaran Senseshaper.png" id="238_Vessaran Senseshaper" data-flag="@X" onclick="openSidebar('238_Vessaran Senseshaper',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\17_Even the Odds.png" id="17_Even the Odds" data-flag="@X" onclick="openSidebar('17_Even the Odds',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\48_Alliance Farseer.png" id="48_Alliance Farseer" data-flag="@X" onclick="openSidebar('48_Alliance Farseer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\134_Feast on Memories.png" id="134_Feast on Memories" data-flag="@X" onclick="openSidebar('134_Feast on Memories',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\204_Spiteful Revenant.png" id="204_Spiteful Revenant" data-flag="@X" onclick="openSidebar('204_Spiteful Revenant',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\210_Autumnal Guerrilla.png" id="210_Autumnal Guerrilla" data-flag="@X" onclick="openSidebar('210_Autumnal Guerrilla',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\18_Helping Hand.png" id="18_Helping Hand" data-flag="@X" onclick="openSidebar('18_Helping Hand',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\51_Anhirai Cannoneer.png" id="51_Anhirai Cannoneer" data-flag="@X" onclick="openSidebar('51_Anhirai Cannoneer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\135_Flay the Flesh.png" id="135_Flay the Flesh" data-flag="@X" onclick="openSidebar('135_Flay the Flesh',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\207_Tyrant's Sigil.png" id="207_Tyrants Sigil" data-flag="@X" onclick="openSidebar('207_Tyrants Sigil',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\215_Expeditionary Force.png" id="215_Expeditionary Force" data-flag="@X" onclick="openSidebar('215_Expeditionary Force',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\21_Ilâthri Warmage.png" id="21_Ilâthri Warmage" data-flag="@X" onclick="openSidebar('21_Ilâthri Warmage',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\53_Anhirai Sentry.png" id="53_Anhirai Sentry" data-flag="@X" onclick="openSidebar('53_Anhirai Sentry',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\136_Force Thought.png" id="136_Force Thought" data-flag="@X" onclick="openSidebar('136_Force Thought',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\177_Barago's Faithful.png" id="177_Baragos Faithful" data-flag="@X" onclick="openSidebar('177_Baragos Faithful',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\216_Favor of the Worldmind.png" id="216_Favor of the Worldmind" data-flag="@X" onclick="openSidebar('216_Favor of the Worldmind',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\29_Peace of Mind.png" id="29_Peace of Mind" data-flag="@X" onclick="openSidebar('29_Peace of Mind',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\54_Astral Projection.png" id="54_Astral Projection" data-flag="@X" onclick="openSidebar('54_Astral Projection',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\138_Hexing Monarch.png" id="138_Hexing Monarch" data-flag="@X" onclick="openSidebar('138_Hexing Monarch',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\190_Frenzied Kavu.png" id="190_Frenzied Kavu" data-flag="@X" onclick="openSidebar('190_Frenzied Kavu',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\223_Rattling Mystic.png" id="223_Rattling Mystic" data-flag="@X" onclick="openSidebar('223_Rattling Mystic',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\32_Renewed Faith.png" id="32_Renewed Faith" data-flag="@X" onclick="openSidebar('32_Renewed Faith',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\60_Cryptic Annelid.png" id="60_Cryptic Annelid" data-flag="@X" onclick="openSidebar('60_Cryptic Annelid',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\140_Homicidal Tendencies.png" id="140_Homicidal Tendencies" data-flag="@X" onclick="openSidebar('140_Homicidal Tendencies',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\191_Gravity Point.png" id="191_Gravity Point" data-flag="@X" onclick="openSidebar('191_Gravity Point',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\226_Shamaness of Ergu.png" id="226_Shamaness of Ergu" data-flag="@X" onclick="openSidebar('226_Shamaness of Ergu',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\38_Substitute.png" id="38_Substitute" data-flag="@X" onclick="openSidebar('38_Substitute',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\61_Dismal Failure.png" id="61_Dismal Failure" data-flag="@X" onclick="openSidebar('61_Dismal Failure',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\147_Mind Shred.png" id="147_Mind Shred" data-flag="@X" onclick="openSidebar('147_Mind Shred',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\192_Lightning Bolt.png" id="192_Lightning Bolt" data-flag="@X" onclick="openSidebar('192_Lightning Bolt',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\229_Slithering Kestrel.png" id="229_Slithering Kestrel" data-flag="@X" onclick="openSidebar('229_Slithering Kestrel',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\41_Thoughts of Strength.png" id="41_Thoughts of Strength" data-flag="@X" onclick="openSidebar('41_Thoughts of Strength',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\63_Farsight.png" id="63_Farsight" data-flag="@X" onclick="openSidebar('63_Farsight',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\149_Mindshredder Venom.png" id="149_Mindshredder Venom" data-flag="@X" onclick="openSidebar('149_Mindshredder Venom',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\195_Palatinate Reinforcements.png" id="195_Palatinate Reinforcements" data-flag="@X" onclick="openSidebar('195_Palatinate Reinforcements',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\230_Slitherwood Druid.png" id="230_Slitherwood Druid" data-flag="@X" onclick="openSidebar('230_Slitherwood Druid',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\45_White Elemental Blast.png" id="45_White Elemental Blast" data-flag="@X" onclick="openSidebar('45_White Elemental Blast',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\67_Gust Manipulator.png" id="67_Gust Manipulator" data-flag="@X" onclick="openSidebar('67_Gust Manipulator',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\150_Mindstring Augury.png" id="150_Mindstring Augury" data-flag="@X" onclick="openSidebar('150_Mindstring Augury',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\196_Palatine Hatchling.png" id="196_Palatine Hatchling" data-flag="@X" onclick="openSidebar('196_Palatine Hatchling',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\234_Strength of Mind.png" id="234_Strength of Mind" data-flag="@X" onclick="openSidebar('234_Strength of Mind',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\3_Angelic Ascension.png" id="3_Angelic Ascension" data-flag="@X" onclick="openSidebar('3_Angelic Ascension',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\68_Hydrokinetic Master.png" id="68_Hydrokinetic Master" data-flag="@X" onclick="openSidebar('68_Hydrokinetic Master',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\151_Minions' Murmurs.png" id="151_Minions Murmurs" data-flag="@X" onclick="openSidebar('151_Minions Murmurs',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\199_Ravaged Defenses.png" id="199_Ravaged Defenses" data-flag="@X" onclick="openSidebar('199_Ravaged Defenses',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\235_Territorial Duel.png" id="235_Territorial Duel" data-flag="@X" onclick="openSidebar('235_Territorial Duel',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\8_Aven Nightwatch.png" id="8_Aven Nightwatch" data-flag="@X" onclick="openSidebar('8_Aven Nightwatch',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\72_Kaêna's Blessing.png" id="72_Kaênas Blessing" data-flag="@X" onclick="openSidebar('72_Kaênas Blessing',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\154_Nightmare Weaver.png" id="154_Nightmare Weaver" data-flag="@X" onclick="openSidebar('154_Nightmare Weaver',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\202_Show of Force.png" id="202_Show of Force" data-flag="@X" onclick="openSidebar('202_Show of Force',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\10_Aviru's Inquisitor.png" id="10_Avirus Inquisitor" data-flag="@X" onclick="openSidebar('10_Avirus Inquisitor',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\76_Lunar Force.png" id="76_Lunar Force" data-flag="@X" onclick="openSidebar('76_Lunar Force',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\158_Poisonpalp Brute.png" id="158_Poisonpalp Brute" data-flag="@X" onclick="openSidebar('158_Poisonpalp Brute',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\205_Tarspitter.png" id="205_Tarspitter" data-flag="@X" onclick="openSidebar('205_Tarspitter',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\12_Call for Help.png" id="12_Call for Help" data-flag="@X" onclick="openSidebar('12_Call for Help',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\83_Mindbreaker Empath.png" id="83_Mindbreaker Empath" data-flag="@X" onclick="openSidebar('83_Mindbreaker Empath',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\159_Prison Spinner.png" id="159_Prison Spinner" data-flag="@X" onclick="openSidebar('159_Prison Spinner',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\208_Warp Away.png" id="208_Warp Away" data-flag="@X" onclick="openSidebar('208_Warp Away',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\19_Honor the Dead.png" id="19_Honor the Dead" data-flag="@X" onclick="openSidebar('19_Honor the Dead',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\84_Narcomoeba.png" id="84_Narcomoeba" data-flag="@X" onclick="openSidebar('84_Narcomoeba',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\165_Shatter Mind Blank.png" id="165_Shatter Mind Blank" data-flag="@X" onclick="openSidebar('165_Shatter Mind Blank',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\20_Hypnotic Glare.png" id="20_Hypnotic Glare" data-flag="@X" onclick="openSidebar('20_Hypnotic Glare',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\89_People of the Mask.png" id="89_People of the Mask" data-flag="@X" onclick="openSidebar('89_People of the Mask',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\167_Sightless Dreamweaver.png" id="167_Sightless Dreamweaver" data-flag="@X" onclick="openSidebar('167_Sightless Dreamweaver',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\24_Lucent Liminid.png" id="24_Lucent Liminid" data-flag="@X" onclick="openSidebar('24_Lucent Liminid',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\90_Psionic Vampirism.png" id="90_Psionic Vampirism" data-flag="@X" onclick="openSidebar('90_Psionic Vampirism',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\168_Silkbind.png" id="168_Silkbind" data-flag="@X" onclick="openSidebar('168_Silkbind',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\25_Magicicada.png" id="25_Magicicada" data-flag="@X" onclick="openSidebar('25_Magicicada',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\91_Psychic Awakening.png" id="91_Psychic Awakening" data-flag="@X" onclick="openSidebar('91_Psychic Awakening',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\173_Venomous Ambush.png" id="173_Venomous Ambush" data-flag="@X" onclick="openSidebar('173_Venomous Ambush',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\26_Mind Blank.png" id="26_Mind Blank" data-flag="@X" onclick="openSidebar('26_Mind Blank',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\97_Second Wind.png" id="97_Second Wind" data-flag="@X" onclick="openSidebar('97_Second Wind',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\120_Bloodcurdling Ambush.png" id="120_Bloodcurdling Ambush" data-flag="@X" onclick="openSidebar('120_Bloodcurdling Ambush',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\28_Order of Mount Aran.png" id="28_Order of Mount Aran" data-flag="@X" onclick="openSidebar('28_Order of Mount Aran',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\98_Serious Setback.png" id="98_Serious Setback" data-flag="@X" onclick="openSidebar('98_Serious Setback',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\121_Boneyard Sentinel.png" id="121_Boneyard Sentinel" data-flag="@X" onclick="openSidebar('121_Boneyard Sentinel',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\31_Reluctant Footsoldier.png" id="31_Reluctant Footsoldier" data-flag="@X" onclick="openSidebar('31_Reluctant Footsoldier',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\101_Slave to the Mesmer.png" id="101_Slave to the Mesmer" data-flag="@X" onclick="openSidebar('101_Slave to the Mesmer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\124_Delirium Skeins.png" id="124_Delirium Skeins" data-flag="@X" onclick="openSidebar('124_Delirium Skeins',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\33_Revered Dead.png" id="33_Revered Dead" data-flag="@X" onclick="openSidebar('33_Revered Dead',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\104_Split Personality.png" id="104_Split Personality" data-flag="@X" onclick="openSidebar('104_Split Personality',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\125_Dream Feast.png" id="125_Dream Feast" data-flag="@X" onclick="openSidebar('125_Dream Feast',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\39_Sunlance.png" id="39_Sunlance" data-flag="@X" onclick="openSidebar('39_Sunlance',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\107_Tamper.png" id="107_Tamper" data-flag="@X" onclick="openSidebar('107_Tamper',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\126_Dreamweaver Drone.png" id="126_Dreamweaver Drone" data-flag="@X" onclick="openSidebar('126_Dreamweaver Drone',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\40_Thoughtbloom.png" id="40_Thoughtbloom" data-flag="@X" onclick="openSidebar('40_Thoughtbloom',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\108_Telepathy.png" id="108_Telepathy" data-flag="@X" onclick="openSidebar('108_Telepathy',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\130_Enter the Mesmer.png" id="130_Enter the Mesmer" data-flag="@X" onclick="openSidebar('130_Enter the Mesmer',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\42_Vanguard Angel.png" id="42_Vanguard Angel" data-flag="@X" onclick="openSidebar('42_Vanguard Angel',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\110_Thought Police.png" id="110_Thought Police" data-flag="@X" onclick="openSidebar('110_Thought Police',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\137_Forget.png" id="137_Forget" data-flag="@X" onclick="openSidebar('137_Forget',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\49_Alliance Scout.png" id="49_Alliance Scout" data-flag="@X" onclick="openSidebar('49_Alliance Scout',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\141_Hunger for Blood.png" id="141_Hunger for Blood" data-flag="@X" onclick="openSidebar('141_Hunger for Blood',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\52_Anhirai Oppressor.png" id="52_Anhirai Oppressor" data-flag="@X" onclick="openSidebar('52_Anhirai Oppressor',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\144_Lobotomy Muse.png" id="144_Lobotomy Muse" data-flag="@X" onclick="openSidebar('144_Lobotomy Muse',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\55_Astral Reinforcements.png" id="55_Astral Reinforcements" data-flag="@X" onclick="openSidebar('55_Astral Reinforcements',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\146_Miasma Spiderling.png" id="146_Miasma Spiderling" data-flag="@X" onclick="openSidebar('146_Miasma Spiderling',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\56_Conscript of Anhira.png" id="56_Conscript of Anhira" data-flag="@X" onclick="openSidebar('56_Conscript of Anhira',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\148_Mindshredder Hatchling.png" id="148_Mindshredder Hatchling" data-flag="@X" onclick="openSidebar('148_Mindshredder Hatchling',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\59_Counterspell.png" id="59_Counterspell" data-flag="@X" onclick="openSidebar('59_Counterspell',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\153_Molting Corpse.png" id="153_Molting Corpse" data-flag="@X" onclick="openSidebar('153_Molting Corpse',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\65_Flash of Insight.png" id="65_Flash of Insight" data-flag="@X" onclick="openSidebar('65_Flash of Insight',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\157_Panicspitter.png" id="157_Panicspitter" data-flag="@X" onclick="openSidebar('157_Panicspitter',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\66_Foresee.png" id="66_Foresee" data-flag="@X" onclick="openSidebar('66_Foresee',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\160_Psider Bite.png" id="160_Psider Bite" data-flag="@X" onclick="openSidebar('160_Psider Bite',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\70_Journeyman Augur.png" id="70_Journeyman Augur" data-flag="@X" onclick="openSidebar('70_Journeyman Augur',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\162_Psydric Mindbreakers.png" id="162_Psydric Mindbreakers" data-flag="@X" onclick="openSidebar('162_Psydric Mindbreakers',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\71_Journeyman Telepath.png" id="71_Journeyman Telepath" data-flag="@X" onclick="openSidebar('71_Journeyman Telepath',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\166_Shred Memories.png" id="166_Shred Memories" data-flag="@X" onclick="openSidebar('166_Shred Memories',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\73_Kinetic Master.png" id="73_Kinetic Master" data-flag="@X" onclick="openSidebar('73_Kinetic Master',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\169_Surrogate Spawning.png" id="169_Surrogate Spawning" data-flag="@X" onclick="openSidebar('169_Surrogate Spawning',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\74_Librarian of Kaêna.png" id="74_Librarian of Kaêna" data-flag="@X" onclick="openSidebar('74_Librarian of Kaêna',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\170_Swarm Host.png" id="170_Swarm Host" data-flag="@X" onclick="openSidebar('170_Swarm Host',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\75_Librarian of Mishe.png" id="75_Librarian of Mishe" data-flag="@X" onclick="openSidebar('75_Librarian of Mishe',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\171_Swarm-Rouser.png" id="171_Swarm-Rouser" data-flag="@X" onclick="openSidebar('171_Swarm-Rouser',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\77_Lust for Knowledge.png" id="77_Lust for Knowledge" data-flag="@X" onclick="openSidebar('77_Lust for Knowledge',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\172_Telekinetic Assault.png" id="172_Telekinetic Assault" data-flag="@X" onclick="openSidebar('172_Telekinetic Assault',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\78_Masquerade Dancer.png" id="78_Masquerade Dancer" data-flag="@X" onclick="openSidebar('78_Masquerade Dancer',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\174_Vision of the Mesmer.png" id="174_Vision of the Mesmer" data-flag="@X" onclick="openSidebar('174_Vision of the Mesmer',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\81_Mental Defenses.png" id="81_Mental Defenses" data-flag="@X" onclick="openSidebar('81_Mental Defenses',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\82_Mind-Flight Novice.png" id="82_Mind-Flight Novice" data-flag="@X" onclick="openSidebar('82_Mind-Flight Novice',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\87_Novice Mindcensor.png" id="87_Novice Mindcensor" data-flag="@X" onclick="openSidebar('87_Novice Mindcensor',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\88_Overwhelming Resonance.png" id="88_Overwhelming Resonance" data-flag="@X" onclick="openSidebar('88_Overwhelming Resonance',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\94_Qalanin Telepath.png" id="94_Qalanin Telepath" data-flag="@X" onclick="openSidebar('94_Qalanin Telepath',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\95_Remembrancer's Kainui.png" id="95_Remembrancers Kainui" data-flag="@X" onclick="openSidebar('95_Remembrancers Kainui',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\96_Rethink.png" id="96_Rethink" data-flag="@X" onclick="openSidebar('96_Rethink',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\102_Sleep.png" id="102_Sleep" data-flag="@X" onclick="openSidebar('102_Sleep',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\109_Teleport.png" id="109_Teleport" data-flag="@X" onclick="openSidebar('109_Teleport',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\111_Thoughtful Meditation.png" id="111_Thoughtful Meditation" data-flag="@X" onclick="openSidebar('111_Thoughtful Meditation',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\114_Unthink.png" id="114_Unthink" data-flag="@X" onclick="openSidebar('114_Unthink',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\115_Vision Skeins.png" id="115_Vision Skeins" data-flag="@X" onclick="openSidebar('115_Vision Skeins',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\116_Wall of Imagination.png" id="116_Wall of Imagination" data-flag="@X" onclick="openSidebar('116_Wall of Imagination',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+<div id="gold" class="anchor"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\239_Erase Memories.png" id="239_Erase Memories" data-flag="@X" onclick="openSidebar('239_Erase Memories',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\241_Vitalizing Cascade.png" id="241_Vitalizing Cascade" data-flag="@X" onclick="openSidebar('241_Vitalizing Cascade',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\240_Leaf-Winged Earthbender.png" id="240_Leaf-Winged Earthbender" data-flag="@X" onclick="openSidebar('240_Leaf-Winged Earthbender',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\242_Electrokinesis.png" id="242_Electrokinesis" data-flag="@X" onclick="openSidebar('242_Electrokinesis',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+<div id="colorless" class="anchor"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\2_The Worldmind.png" id="2_The Worldmind" data-flag="@X" onclick="openSidebar('2_The Worldmind',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\251_Neurograft.png" id="251_Neurograft" data-flag="@X" onclick="openSidebar('251_Neurograft',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\252_Pithing Needle.png" id="252_Pithing Needle" data-flag="@X" onclick="openSidebar('252_Pithing Needle',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\253_Psydric Obelisk.png" id="253_Psydric Obelisk" data-flag="@X" onclick="openSidebar('253_Psydric Obelisk',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\254_Refraction Hive.png" id="254_Refraction Hive" data-flag="@X" onclick="openSidebar('254_Refraction Hive',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\1_Subsume.png" id="1_Subsume" data-flag="@X" onclick="openSidebar('1_Subsume',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\244_Aqua Psicryst.png" id="244_Aqua Psicryst" data-flag="@X" onclick="openSidebar('244_Aqua Psicryst',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\246_Coal Psicryst.png" id="246_Coal Psicryst" data-flag="@X" onclick="openSidebar('246_Coal Psicryst',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\247_Emerald Psicryst.png" id="247_Emerald Psicryst" data-flag="@X" onclick="openSidebar('247_Emerald Psicryst',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\248_Flame Psicryst.png" id="248_Flame Psicryst" data-flag="@X" onclick="openSidebar('248_Flame Psicryst',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\249_Ivory Psicryst.png" id="249_Ivory Psicryst" data-flag="@X" onclick="openSidebar('249_Ivory Psicryst',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\250_Mindwake Blade.png" id="250_Mindwake Blade" data-flag="@X" onclick="openSidebar('250_Mindwake Blade',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\258_Venser's Journal.png" id="258_Vensers Journal" data-flag="@X" onclick="openSidebar('258_Vensers Journal',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\243_Amorphous Golem.png" id="243_Amorphous Golem" data-flag="@X" onclick="openSidebar('243_Amorphous Golem',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\245_Clockwork Widow.png" id="245_Clockwork Widow" data-flag="@X" onclick="openSidebar('245_Clockwork Widow',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\255_Rethinking Machine.png" id="255_Rethinking Machine" data-flag="@X" onclick="openSidebar('255_Rethinking Machine',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\256_Steel Phoenix.png" id="256_Steel Phoenix" data-flag="@X" onclick="openSidebar('256_Steel Phoenix',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\257_Thought Vessel.png" id="257_Thought Vessel" data-flag="@X" onclick="openSidebar('257_Thought Vessel',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+<div id="land" class="anchor"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\264_Floating Temple.png" id="264_Floating Temple" data-flag="@X" onclick="openSidebar('264_Floating Temple',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\263_Crystal Falls.png" id="263_Crystal Falls" data-flag="@X" onclick="openSidebar('263_Crystal Falls',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\273_Spider Web.png" id="273_Spider Web" data-flag="@X" onclick="openSidebar('273_Spider Web',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\261_Clay Pit.png" id="261_Clay Pit" data-flag="@X" onclick="openSidebar('261_Clay Pit',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\268_Meadow.png" id="268_Meadow" data-flag="@X" onclick="openSidebar('268_Meadow',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\265_Frozen Expanse.png" id="265_Frozen Expanse" data-flag="@X" onclick="openSidebar('265_Frozen Expanse',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\259_Abyssal Cavern.png" id="259_Abyssal Cavern" data-flag="@X" onclick="openSidebar('259_Abyssal Cavern',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\266_Inland Waste.png" id="266_Inland Waste" data-flag="@X" onclick="openSidebar('266_Inland Waste',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\260_Boreal Forest.png" id="260_Boreal Forest" data-flag="@X" onclick="openSidebar('260_Boreal Forest',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\272_RL41.png" id="272_RL41" data-flag="@X" onclick="openSidebar('272_RL41',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\269_Murky Brush.png" id="269_Murky Brush" data-flag="@X" onclick="openSidebar('269_Murky Brush',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\262_Crater Lake.png" id="262_Crater Lake" data-flag="@X" onclick="openSidebar('262_Crater Lake',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\267_Mangrove Creek.png" id="267_Mangrove Creek" data-flag="@X" onclick="openSidebar('267_Mangrove Creek',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\274_Tepui.png" id="274_Tepui" data-flag="@X" onclick="openSidebar('274_Tepui',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\270_Paradise Island.png" id="270_Paradise Island" data-flag="@X" onclick="openSidebar('270_Paradise Island',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\271_Psychic Temple.png" id="271_Psychic Temple" data-flag="@X" onclick="openSidebar('271_Psychic Temple',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\276_Plains.png" id="276_Plains" data-flag="@X" onclick="openSidebar('276_Plains',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\277_Island.png" id="277_Island" data-flag="@X" onclick="openSidebar('277_Island',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\278_Swamp.png" id="278_Swamp" data-flag="@X" onclick="openSidebar('278_Swamp',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\279_Mountain.png" id="279_Mountain" data-flag="@X" onclick="openSidebar('279_Mountain',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\280_Forest.png" id="280_Forest" data-flag="@X" onclick="openSidebar('280_Forest',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\275_Wastes.png" id="275_Wastes" data-flag="@X" onclick="openSidebar('275_Wastes',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+<div id="token" class="anchor"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\9t_Aigwêrion Mismar.png" id="9t_Aigwêrion Mismar" data-flag="@X" onclick="openSidebar('9t_Aigwêrion Mismar',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\10t_Ikchal, Enforcer Prefect.png" id="10t_Ikchal, Enforcer Prefect" data-flag="@X" onclick="openSidebar('10t_Ikchal, Enforcer Prefect',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\11t_Tamiyo, Mentat Supreme.png" id="11t_Tamiyo, Mentat Supreme" data-flag="@X" onclick="openSidebar('11t_Tamiyo, Mentat Supreme',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\1t_Angel.png" id="1t_Angel" data-flag="@X" onclick="openSidebar('1t_Angel',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\2t_Bird.png" id="2t_Bird" data-flag="@X" onclick="openSidebar('2t_Bird',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\3t_Soldier.png" id="3t_Soldier" data-flag="@X" onclick="openSidebar('3t_Soldier',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\4t_Spider.png" id="4t_Spider" data-flag="@X" onclick="openSidebar('4t_Spider',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\5t_Elemental.png" id="5t_Elemental" data-flag="@X" onclick="openSidebar('5t_Elemental',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\6t_Insect.png" id="6t_Insect" data-flag="@X" onclick="openSidebar('6t_Insect',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\7t_Naga.png" id="7t_Naga" data-flag="@X" onclick="openSidebar('7t_Naga',false)"></div>
+			<div class="container"><img alt="/sets\SFR-files\img\8t_Plant.png" id="8t_Plant" data-flag="@X" onclick="openSidebar('8t_Plant',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+	</div>
+</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+		
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = '/img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		console.log(num);
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		if (num == 'sidebar_img')
+		{
+			const rotated_img = document.getElementById('sidebar_h_img');
+			const sidebar_img = document.getElementById('sidebar_img');
+
+			if (horizontal && rotated_img.style.display == 'none')
+			{
+				rotated_img.style.display = "block";
+				sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+			}
+			else
+			{
+				rotated_img.style.display = "none";
+				sidebar_img.style.filter = "";
+			}
+		}
+	}
+
+	function openSidebar(id, h = false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+		
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
+
+		if (horizontal && !sidebar_img.src.includes("_back"))
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+		
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+		
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			search();
+		}
+	});
+
+	function search() {
+		const url = new URL('search', window.location.origin);
+		url.searchParams.append('search', document.getElementById("search").value);
+		window.location.href = url;
+	}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL('card', window.location.origin);
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url;
+			}
+	</script>
+</body>
+</html>
